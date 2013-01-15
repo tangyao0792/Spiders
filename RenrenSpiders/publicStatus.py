@@ -3,7 +3,7 @@
 
 '''A simple script for public a status to renren.com.
 ====================================================================
-#   Author:		TangYao - tangyao0792.github.com
+#   Author:	    	TangYao - tangyao0792.github.com
 #   Email:			tangyao0792@gmail.com
 #   Version:		1.0
 #   Last change:	2012.01.12
