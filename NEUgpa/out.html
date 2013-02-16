@@ -1,0 +1,1171 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>成绩查询</title>
+
+<link href="css/OA_background.css" rel=stylesheet>
+<script language="JavaScript">
+ function QueryResult(){
+ window.document.forms[0].action='ACTIONQUERYSTUDENTSCORE.APPPROCESS';
+ window.document.forms[0].target='_self';
+ window.document.forms[0].submit();
+ }
+</script>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+.style2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="overflow:hidden">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" class=tableborder>
+  <tr> 
+    <td  background="include/Frame/images/SilverBar.gif" height="30" class="caption">&nbsp;&nbsp;
+成绩查询
+</td>
+  </tr>
+  <tr> 
+    <td valign="top" align="center" height="100%">
+
+<form name="" action="" method="post" target="_Result">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr align="left" valign="top">
+    <td width="100%" height="1" align="center">
+	<table width="90%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td height="36">学号:&nbsp;20101815&nbsp;&nbsp;&nbsp;&nbsp;姓名:&nbsp;唐尧</td>
+            <td width="300" align="right" nowrap>学年学期&nbsp;
+              <select name="YearTermNO" style="width:200px" onChange="QueryResult()">
+            <option value="16">2012-2013学年第二学期</option><option value="15">2012-2013学年第一学期</option><option value="14">2011-2012学年第二学期</option><option value="13">2011-2012学年第一学期</option><option value="12">2010-2011学年第二学期</option><option value="11" selected>2010-2011学年第一学期</option><option value="10">2009-2010学年第二学期</option><option value="9">2009-2010学年第一学期</option><option value="8">2008-2009学年第二学期</option><option value="7">2008-2009学年第一学期</option><option value="6">2007-2008学年第二学期</option><option value="5">2007-2008学年第一学期</option><option value="4">2006-2007学年第二学期</option><option value="3">2006-2007学年第一学期</option><option value="2">2005-2006学年第二学期</option><option value="1">2005-2006学年第一学期</option></select></td>
+            <td width="100" align="right" class="td_a"><input type="button" class="button" name="doQuery" value=" 查 询 " onClick="QueryResult()"></td>
+          </tr>
+        </table>
+</td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="100%" height="100%" align="center">
+	<div style="height:100% ; width:95%; overflow:auto">	
+<table border="1" bordercolor="#B4E2A4" style="BORDER-COLLAPSE:collapse" align="left" cellspacing="0" width="100%">
+
+  <tr>
+    <td class="color-header" width="11%" align="center" nowrap height="30">课程性质</td>
+    <td class="color-header" width="12%" align="center" nowrap>课程号</td>
+    <td class="color-header" width="17%" align="center" nowrap>课程名称</td>
+    <td class="color-header" width="11%" align="center" nowrap>考试类型</td>
+    <td class="color-header" width="9%" align="center" nowrap>学时</td>
+    <td class="color-header" width="11%" align="center" nowrap>成绩类型</td>
+    <!--<td class="color-header" width="10%" align="center" nowrap>期末成绩</td>
+    --><td class="color-header" width="10%" align="center" nowrap>总评成绩</td>
+  </tr>
+   
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B110600620</td>
+    <td nowrap>&nbsp;工程概论与职业发展规划</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>合格</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B150100011</td>
+    <td nowrap>&nbsp;高等数学①㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>80</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>91</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B150301050</td>
+    <td nowrap>&nbsp;普通化学</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>56</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>86</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B161500020</td>
+    <td nowrap>&nbsp;思想道德修养法律基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>48</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B180100221</td>
+    <td nowrap>&nbsp;体育（一）</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>28</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>80</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B190100110</td>
+    <td nowrap>&nbsp;计算机基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>32</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B240100030</td>
+    <td nowrap>&nbsp;大学生心理健康教育</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+owNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B110600620</td>
+    <td nowrap>&nbsp;工程概论与职业发展规划</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>合格</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B150100011</td>
+    <td nowrap>&nbsp;高等数学①㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>80</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>91</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B150301050</td>
+    <td nowrap>&nbsp;普通化学</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>56</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>86</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B161500020</td>
+    <td nowrap>&nbsp;思想道德修养法律基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>48</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B180100221</td>
+    <td nowrap>&nbsp;体育（一）</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>28</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>80</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B190100110</td>
+    <td nowrap>&nbsp;计算机基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>32</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B240100030</td>
+    <td nowrap>&nbsp;大学生心理健康教育</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+ow">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B150100011</td>
+    <td nowrap>&nbsp;高等数学①㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>80</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>91</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B150301050</td>
+    <td nowrap>&nbsp;普通化学</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>56</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>86</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B161500020</td>
+    <td nowrap>&nbsp;思想道德修养法律基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>48</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B180100221</td>
+    <td nowrap>&nbsp;体育（一）</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>28</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>80</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B190100110</td>
+    <td nowrap>&nbsp;计算机基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>32</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B240100030</td>
+    <td nowrap>&nbsp;大学生心理健康教育</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+owNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B150301050</td>
+    <td nowrap>&nbsp;普通化学</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>56</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>86</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B161500020</td>
+    <td nowrap>&nbsp;思想道德修养法律基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>48</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B180100221</td>
+    <td nowrap>&nbsp;体育（一）</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>28</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>80</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B190100110</td>
+    <td nowrap>&nbsp;计算机基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>32</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B240100030</td>
+    <td nowrap>&nbsp;大学生心理健康教育</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+ow">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B161500020</td>
+    <td nowrap>&nbsp;思想道德修养法律基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>48</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B180100221</td>
+    <td nowrap>&nbsp;体育（一）</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>28</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>80</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B190100110</td>
+    <td nowrap>&nbsp;计算机基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>32</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B240100030</td>
+    <td nowrap>&nbsp;大学生心理健康教育</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+owNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B180100221</td>
+    <td nowrap>&nbsp;体育（一）</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>28</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>80</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B190100110</td>
+    <td nowrap>&nbsp;计算机基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>32</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B240100030</td>
+    <td nowrap>&nbsp;大学生心理健康教育</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+ow">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B190100110</td>
+    <td nowrap>&nbsp;计算机基础</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>32</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B240100030</td>
+    <td nowrap>&nbsp;大学生心理健康教育</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+owNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B240100030</td>
+    <td nowrap>&nbsp;大学生心理健康教育</td>
+    <td align="center" nowrap>考查</td>
+    <td align="center" nowrap>24</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>良</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+ow">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100281</td>
+    <td nowrap>&nbsp;大学英语㈠</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>75</td>
+  </tr>
+  
+  <tr  class="color-rowNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+owNext">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100282</td>
+    <td nowrap>&nbsp;大学英语㈡</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>79</td>
+  </tr>
+  
+  <tr  class="color-row">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+ow">
+    <td height="28" align="center" nowrap>公共基础课</td>
+    <td align="center" nowrap>B170100283</td>
+    <td nowrap>&nbsp;大学英语㈢</td>
+    <td align="center" nowrap>考试</td>
+    <td align="center" nowrap>64</td>
+    <td align="center" nowrap>期末考试</td>
+    <!--<td align="center" nowrap></td>
+    --><td align="center" nowrap>74</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="9" nowrap height="25">共有记录数10<img src="images/Spacer.gif" width="600" height="1"></td>
+  </tr>
+</table>	
+</div>	</td>
+  </tr>
+</table>
+</form>
+
+</td>
+  </tr>
+<!--
+  <tr> 
+    <td background="include/Frame/images/leftbg.gif" height="10"></td>
+  </tr>
+!-->
+  <tr> 
+  <td align="right" height="20">
+
+  <a href="http://www.tsanghao.com/QH_RJ/index.htm" target="_blank"><font color="#000000">http://www.tsanghao.com/</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  
+   <a href="ACTIONLOGOUT.APPPROCESS" target="_parent"><font color=red >退出系统</font> </a>
+  </td>
+
+
+  </tr>
+</table>
+
+
+</body>
+</html>
+
+
+10
