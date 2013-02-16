@@ -35,6 +35,7 @@ def login():
     request = urllib2.Request('http://www.renren.com/PLogin.do', info)
     response = urllib2.urlopen(request)
     html = response.read()
+    print html
     return html
 
 digits = string.digits
