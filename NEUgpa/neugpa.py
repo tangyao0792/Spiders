@@ -45,6 +45,7 @@ def login(userid, password):
 
 
 def selectYear(YearTermNO):
+    ''' select the year'''
     xn = {}
     xn['YearTermNO'] = str(YearTermNO)
     info = urllib.urlencode(xn)
@@ -54,6 +55,8 @@ def selectYear(YearTermNO):
 
 
 def parseHTML(html):
+    '''parse the html file to lesson and score
+    '''
     term = []
     first = 0
     cnt = 0
@@ -82,7 +85,7 @@ if __name__ == '__main__':
     html = login(20101815, 'O000000000')
     html = html.decode('gbk')
 #
-#    #html = selectYear(14)
+    html = selectYear(14)
     term = parseHTML(html)
-#    for tup in term:
-#        print tup[0], tup[1]
+    for tup in term:
+        print tup[0], tup[1]
