@@ -82,7 +82,7 @@ def parseHTML(html):
 
 if __name__ == '__main__':
     initialCookie()
-    html = login(20101815, 'O000000000')
+    html = login(20101234, 'your password')
     html = html.decode('gbk')
 #
     html = selectYear(14)

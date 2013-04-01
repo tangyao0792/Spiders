@@ -15,3 +15,7 @@ RenrenSpiders
 
 TiebaWalker
 输入两个百度贴吧的名字, 从一个贴吧只通过友情连接走到另一个贴吧...没什么意义...
+
+
+Template
+一个支持多线程, cookie, 代理 的爬虫模板, 长期维护...
