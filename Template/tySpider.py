@@ -110,23 +110,7 @@ def my_func(*x):
 
 
 def main():
-    # thread pool test
-#    my_spider = Thread_pool(5, my_func, rest_time=1)
-#    for i in range(100):
-#        my_spider.queue.put(([i], {}))
-#    my_spider.run()
-    
-    # multithreading cookie test
-    url = 'http://202.118.31.197/ACTIONLOGON.APPPROCESS?mode=4'                                                   
-    br1 = ty_browser(True, True, {'http': 'http://127.0.0.1:8088'})                                               
-    br2 = ty_browser(True, True, {'http': 'http://127.0.0.1:8088'})                                               
-    print br1.open_url(url, {'WebUserNO' :'20103073', 'Password': '20103073'}).decode('gbk').encode('utf-8')      
-    raw_input(' ')                                                                                                
-    print br2.open_url(url, {'WebUserNO' :'20103418', 'Password': '20103418'}).decode('gbk').encode('utf-8')      
-    raw_input(' ')
-    print br1.open_url(url).decode('gbk').encode('utf-8')      
-    raw_input(' ')
-    print br2.open_url(url).decode('gbk').encode('utf-8')      
+    pass
 
 if __name__ == '__main__':
     main()
